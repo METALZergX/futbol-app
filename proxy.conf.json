@@ -1,0 +1,14 @@
+{
+    "/apis": {
+      "target": "https://venados.dacodes.mx",
+      "secure": true,
+      "pathRewrite": {
+        "^/api": ""
+      },
+      "changeOrigin": true
+    },
+    "/api": { 
+        "target": "http://localhost:4200",
+        "secure": false
+    }
+}

@@ -1,0 +1,43 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+ 
+a:hover, a:active{
+    color: lightgray;
+}
+ 
+.navigation-items
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.example-icon 
+{
+    padding: 0 14px;
+}
+
+.example-spacer 
+{
+    flex: 1 1 auto;
+}
+
+.button-desktop
+{
+    display: none;
+}
+
+@media only screen and (min-width: 767px) 
+{
+    .hidden-mobile-btn 
+    {
+        display: none !important;
+    }
+
+    .button-desktop 
+    {
+        display: block;
+    }
+}
