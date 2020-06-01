@@ -1,12 +1,12 @@
-# ProjectFut
+# Venados Test
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
 
-# Description
+## Description
 
 This application is made for recruitment purposes.
 
-# Instalation
+## Instalation
 
 Run `npm i` for install all dependencies.
 
