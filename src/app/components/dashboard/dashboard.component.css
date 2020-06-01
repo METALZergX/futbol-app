@@ -2,4 +2,49 @@
 {
     display: block;
     margin: 0 auto;
+    width: 17%;
+    padding: 1em 0em;
+}
+
+.img-center-dash
+{
+    display: block;
+    margin: 0 auto;
+    width: 3em;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.background-grass-score
+{
+    background-image: url('../../../assets/grass_bg.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.font-color-white
+{
+    color: white !important;
+}
+
+.font-color-black
+{
+    color: black !important;
+}
+
+.line-mounth-name
+{
+    text-align: left;
+    padding-left: 0.5em;
+    color: white;
+    margin: 0px;
+    background-color: dimgrey;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    font-size: 16px;
+    text-transform: uppercase;
 }

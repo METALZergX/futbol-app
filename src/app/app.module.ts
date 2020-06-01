@@ -10,6 +10,7 @@ import { MatListModule } from "@angular/material/list";
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatDialogModule} from '@angular/material/dialog';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +20,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { StatisticsComponent } from './components/statistics/statistics.component';
 import { HeaderComponent } from './components/Navigator/header/header.component';
 import { SideNavMobileComponent } from './components/Navigator/side-nav-mobile/side-nav-mobile.component';
+import { GameMonthComponent } from './components/dashboard/game-month/game-month.component';
+import { PlayerComponent } from './components/player/player.component';
+import { PlayerDetailModalComponent } from './components/player/player-detail-modal/player-detail-modal.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,10 @@ import { SideNavMobileComponent } from './components/Navigator/side-nav-mobile/s
     DashboardComponent,
     StatisticsComponent,
     HeaderComponent,
-    SideNavMobileComponent
+    SideNavMobileComponent,
+    GameMonthComponent,
+    PlayerComponent,
+    PlayerDetailModalComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +48,8 @@ import { SideNavMobileComponent } from './components/Navigator/side-nav-mobile/s
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatTabsModule
+    MatTabsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

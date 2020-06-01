@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-side-nav-mobile',
@@ -9,15 +10,22 @@ export class SideNavMobileComponent implements OnInit
 {
   @Output() sideNavClose = new EventEmitter();
 
-  constructor() 
+  constructor(public activeRoute: Router)
   {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void 
+  {}
 
   public onSidenavClose()
   {
     this.sideNavClose.emit();
+  }
+
+  isActiveRoute(routeName: string)
+  {
+    let route_url = this.activeRoute.url;
+
+    return (route_url.trim() == routeName) ? true:false;
   }
 
 }

@@ -41,3 +41,9 @@ a:hover, a:active{
         display: block;
     }
 }
+
+.route-active
+{
+    color: #3c3d3d !important;
+    background-color: #3849ad !important;
+}

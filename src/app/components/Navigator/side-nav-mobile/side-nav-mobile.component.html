@@ -1,9 +1,10 @@
 <div class="side-header-avatar">
    <img class="icon-avatar-user" src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="avatar-user">
-   <h5 class="mb-0">Jonathan Lee</h5>
-   <p class="mb-0">heyfromjonathan@gmail.com</p>
+   <h5 class="mb-0 font-color-white">Jonathan Lee</h5>
+   <p class="mb-0 font-color-white">heyfromjonathan@gmail.com</p>
 </div>
 <mat-nav-list>
-   <a mat-list-item routerLink="/home" (click)="onSidenavClose()">Home</a>
-   <a mat-list-item routerLink="/statistics" (click)="onSidenavClose()">Statistics</a>
+   <a mat-list-item routerLink="/home" [ngClass]="{ 'route-active': isActiveRoute('/home') }" (click)="onSidenavClose()">Home</a>
+   <a mat-list-item routerLink="/statistics" [ngClass]="{ 'route-active': isActiveRoute('/statistics') }" (click)="onSidenavClose()">Statistics</a>
+   <a mat-list-item routerLink="/players" [ngClass]="{ 'route-active': isActiveRoute('/players') }" (click)="onSidenavClose()">Players</a>
 </mat-nav-list>

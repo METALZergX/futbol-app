@@ -1,0 +1,21 @@
+<div class="text-center background-grass-score-nc font-color-white">
+    <h2 class="mb-0 pt-1 font-weight-semibold">FICHA TÉCNICA</h2>
+    <div>
+        <img class="img-center" [src]="data.image">
+    </div>
+    <p class="mb-0">{{ getNameFull(data) }}</p>
+    <p class="pb-1">{{ data.position }}</p>
+</div>
+<div class="text-center">
+    <h3 class="mb-0 font-weight-semibold">FECHA DE NACIMIENTO</h3>
+    <p>{{ getBirthday(data.birthday) }}</p>
+    <h3 class="mb-0 font-weight-semibold">LUGAR DE NACIMIENTO</h3>
+    <p>{{ data.birth_place }}</p>
+    <h3 class="mb-0 font-weight-semibold">PESO</h3>
+    <p>{{ data.weight }} KG</p>
+    <h3 class="mb-0 font-weight-semibold">ALTURA</h3>
+    <p>{{ data.height }} M</p>
+    <h3 class="mb-0 font-weight-semibold">EQUIPO ANTERIOR</h3>
+    <p>{{ data.last_team }}</p>
+    <button mat-stroked-button class="mb-1 mt-1" (click)="this.closeDialog()">Cerrar</button>
+</div>

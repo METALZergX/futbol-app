@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
    selector: 'app-header',
@@ -9,7 +10,7 @@ export class HeaderComponent implements OnInit
 {
    @Output() public sidenavToggle = new EventEmitter();
 
-   constructor() 
+   constructor(private _activeRoute: Router) 
    {}
 
    ngOnInit(): void {
@@ -19,4 +20,12 @@ export class HeaderComponent implements OnInit
    {
       this.sidenavToggle.emit();
    }
+
+   isActiveRoute(routeName: string)
+   {
+      let route_url = this._activeRoute.url;
+
+      return (route_url.trim() == routeName) ? true:false;
+   }
+   
 }

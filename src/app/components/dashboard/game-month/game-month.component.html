@@ -1,0 +1,36 @@
+<p class="line-mounth-name">{{ title_month }}</p>
+<mat-grid-list class="background-grass-score" cols="4" rowHeight="100px" *ngFor="let game of this.list_games">
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+        <div>
+            <div class="text-center">
+                <mat-icon class="font-color-white" aria-hidden="false" aria-label="calendar icon">date_range</mat-icon>
+            </div>
+            <div>
+                <h3 class="font-color-white text-center" style="text-transform: uppercase;">{{ this.convertDateString(game.datetime) }}</h3>
+            </div>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+        <div>
+            <div>
+                <img class="img-center-dash" src="assets/venados_logo.png">
+            </div>
+            <div>
+                <p class="text-center font-color-white">{{ 'Venados F.C' }}</p>
+            </div>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+        <h2 class="font-color-white">{{ game.home_score }} - {{ game.away_score }}</h2>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+        <div>
+            <div>
+                <img class="img-center-dash" [src]="game.opponent_image">
+            </div>
+            <div>
+                <p class="text-center font-color-white">{{ game.opponent }}</p>
+            </div>
+        </div>
+    </mat-grid-tile>
+</mat-grid-list>

@@ -1,6 +1,5 @@
 import { Component, Output, OnInit, EventEmitter } from '@angular/core';
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

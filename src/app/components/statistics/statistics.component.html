@@ -1,1 +1,26 @@
-<p>statistics works!</p>
+<table class="background-grass-score-nc font-color-white">
+   <tr>
+      <th class="text-left pl-1">Tabla General</th>
+      <th width="40">JJ</th>
+      <th width="40">DG</th>
+      <th width="40">PTS</th>
+   </tr>
+   <tr *ngFor="let game of list_statistics">
+      <td>
+         <div class="d-flex align-items-center">
+            <div class="mr-2">
+               <h2 class="position-team mb-0 pl-1">{{ game.position }}</h2>
+            </div>
+            <div class="mr-1">
+               <img [src]="game.image" [alt]="game.team">
+            </div>
+            <div>
+               <span class="title-team truncate">{{ game.team }}</span>
+            </div>
+         </div>
+      </td>
+      <td class="text-center font-weight-semibold font-size-score">{{ game.games }}</td>
+      <td class="text-center font-weight-semibold font-size-score">{{ game.score_diff }}</td>
+      <td class="text-center font-weight-semibold font-size-score">{{ game.points }}</td>
+   </tr>
+</table>

@@ -1,0 +1,29 @@
+table
+{
+    width: 100%;
+    border-spacing: 0 !important;
+    padding-top: 0;
+}
+
+table>tr:first-child
+{
+    background-color: gray;
+    color: white;
+}
+
+.title-team
+{
+    /*font-size: 20px;*/
+    line-height: 4.2rem;
+}
+
+.position-team
+{
+    font-size: 22px;
+    line-height: 4.2rem;
+}
+
+.font-size-score
+{
+    font-size: 1.2rem;
+}

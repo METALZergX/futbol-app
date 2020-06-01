@@ -1,0 +1,11 @@
+<ng-container *ngFor="let position of list_position_team">
+    <p class="line-mounth-name">{{ position }}</p>
+    <mat-grid-list [cols]="columns_view" rowHeight="2:2">
+        <mat-grid-tile class="d-block" *ngFor="let player of list_players[position]">
+            <div class="cursor-pointer" (click)="showDetailPlayer(player)">
+                <img class="img-center" [src]="player.image">
+                <p class="text-center mb-0">{{ player.name+' '+player.first_surname }}</p>
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>
+</ng-container>

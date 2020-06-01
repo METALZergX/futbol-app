@@ -40,3 +40,8 @@ a:hover, a:active
 {
    margin: 0px !important;
 }
+
+.route-active
+{
+   color: lightgray !important;
+}

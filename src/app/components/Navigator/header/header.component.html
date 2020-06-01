@@ -3,11 +3,12 @@
       <button class="hidden-mobile-btn" mat-icon-button (click)="onToggleSidenav()">
          <mat-icon>menu</mat-icon>
       </button>
-      <span>Equipos</span>
+      <span class="button-desktop">Partidos</span>
       <span class="example-spacer"></span>
       <div class="button-desktop">
-         <button mat-button routerLink="/home">Home</button>
-         <button mat-button routerLink="/statistics">Statistics</button>
+         <button mat-button routerLink="/home" [ngClass]="{ 'route-active': isActiveRoute('/home') }">Home</button>
+         <button mat-button routerLink="/statistics" [ngClass]="{ 'route-active': isActiveRoute('/statistics') }">Statistics</button>
+         <button mat-button routerLink="/players" [ngClass]="{ 'route-active': isActiveRoute('/players') }">Players</button>
       </div>
     </mat-toolbar-row>
 </mat-toolbar>
